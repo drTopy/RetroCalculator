@@ -128,6 +128,22 @@ class ViewController: UIViewController {
         btnSound.play()
     }
     
+    @IBAction func onClearPressed(sender: AnyObject) {
+        playSound()
+        initializeVariables()
+    }
+    
+    
+    func initializeVariables () {
+        
+        runningNumber = ""
+        leftValStr = ""
+        rightValStr = ""
+        currentOperation = Operation.Empty
+        result = ""
+        outputLbl.text = "0"
+    }
+    
 }
 
 
